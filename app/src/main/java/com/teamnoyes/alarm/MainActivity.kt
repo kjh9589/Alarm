@@ -71,6 +71,9 @@ class MainActivity : AppCompatActivity() {
                     PendingIntent.FLAG_UPDATE_CURRENT
                 )
 
+                //Doze Mode일 때도 깨우기
+                //alarmManager.setAndAllowWhileIdle()
+
                 alarmManager.setInexactRepeating(
                     AlarmManager.RTC_WAKEUP,
                     calender.timeInMillis,
